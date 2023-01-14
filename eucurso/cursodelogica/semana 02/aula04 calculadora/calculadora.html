@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício da aula 05</title>
+</head>
+<body>
+    <script>
+        let altura = window.prompt('qual sua altura em metros:')
+        let peso = window.prompt('qual seu peso em quilos:')
+        let imc = peso / altura ** 2
+        if (imc < 18.5 ) {
+            alert(`seu imc é ${imc} e você esta abaixo do peso.`)            
+        } else if (imc >= 18.5  && imc < 25) {
+            alert(`seu imc é ${imc} e você esta no peso normal.`)
+        } else if (imc >= 25 && imc < 30 ) {
+            alert(`seu imc é ${imc} e você esta com excesso de peso.`)
+        } else if (imc >= 30 && imc < 35 ) {
+            alert(`seu imc é ${imc} e você esta com obesidade classe I.`)
+        } else if (imc >= 35 && imc < 40) {
+            alert(`seu imc é ${imc} e você esta com obesidade classe II.`)
+        } else if (imc >= 40) {
+            alert(`seu imc é ${imc} e você esta com obesidade classe III.`)
+        }
+
+    </script>
+</body>
+</html>
