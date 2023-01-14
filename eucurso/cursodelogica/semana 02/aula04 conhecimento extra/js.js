@@ -1,21 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício da aula 04 semana dois</title>
-</head>
-<body>
-    <script>
-        alert('vamos usar a calculadora.')
-        let operador = window.prompt('Digite a operação deseja realizar:'+'\n'+'somar'+'\n'+'subtrair'+'\n'+'dividir'+'\n'+'multiplicar')
+function calculo() {
+
+        //alert('vamos usar a calculadora.')
+        /* let operador = window.prompt('Digite a operação deseja realizar:'+'\n'+'somar'+'\n'+'subtrair'+'\n'+'dividir'+'\n'+'multiplicar') */
        // num01 = window.prompt('escolha o primeiro numero:')
        // num02 = window.prompt('escolha o segundo numero:')
+
+    
+       let select = document.querySelector('#operador');
+       let operador = select.options[select.selectedIndex].value;
+       let num01 = document.querySelector('#pnum')
+       let num02 = document.querySelector('#snum')
+       
+
         if (operador == 'somar' || operador == '+' ) {
-            num01 = window.prompt('escolha o primeiro numero:')
-            num02 = window.prompt('escolha o segundo numero:')
             let res = parseFloat(num01) + parseFloat(num02)
-            alert(`A soma de ${num01} e ${num02} é ${res}.`)            
+            alert(`${text}A soma de ${num01} e ${num02} é ${res}.`)            
         } else if (operador == 'subtrair' || operador == '-'  ) {
             num01 = window.prompt('escolha o primeiro numero:')
             num02 = window.prompt('escolha o segundo numero:')
@@ -33,8 +32,7 @@
             alert(`A multiplicação de ${num01} e ${num02} é ${res}.`)
         } else {
             alert('escolha o operador correto.')
-        }
+        } 
 
-    </script>
-</body>
-</html>
+
+    }  
