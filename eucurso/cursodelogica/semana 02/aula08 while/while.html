@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício da aula 08 semana dois</title>
+</head>
+<body>
+    <script>
+        alert('vamos usar a calculadora.')
+        let entrada = 'entrada'
+        while(entrada != 'sair'){
+        let operador = window.prompt('Digite a operação deseja realizar:'+'\n'+'somar'+'\n'+'subtrair'+'\n'+'dividir'+'\n'+'multiplicar'+'\n'+'para sair digite sair')
+        entrada = operador
+       // num01 = window.prompt('escolha o primeiro numero:')
+       // num02 = window.prompt('escolha o segundo numero:')
+        if (operador == 'somar' || operador == '+' ) {
+            num01 = window.prompt('escolha o primeiro numero:')
+            num02 = window.prompt('escolha o segundo numero:')
+            let res = parseFloat(num01) + parseFloat(num02)
+            alert(`A soma de ${num01} e ${num02} é ${res}.`)            
+        } else if (operador == 'subtrair' || operador == '-'  ) {
+            num01 = window.prompt('escolha o primeiro numero:')
+            num02 = window.prompt('escolha o segundo numero:')
+            let res = num01 - num02
+            alert(`A subtração de ${num01} e ${num02} é ${res}.`)
+        } else if (operador == 'dividir' || operador == '/'  ) {
+            num01 = window.prompt('escolha o primeiro numero:')
+            num02 = window.prompt('escolha o segundo numero:')
+            let res = num01 / num02
+            alert(`A divisão de ${num01} e ${num02} é ${res}.`)
+        } else if (operador == 'multiplicar' || operador == '*'  ) {
+            num01 = window.prompt('escolha o primeiro numero:')
+            num02 = window.prompt('escolha o segundo numero:')
+            let res = num01 * num02
+            alert(`A multiplicação de ${num01} e ${num02} é ${res}.`)
+        } else if (operador == 'sair') {
+            alert('Volte sempre.')
+            
+        } else {
+                alert('escolha o operador correto.')
+            }
+    }
+
+    </script>
+</body>
+</html>
