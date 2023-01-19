@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício da aula 08 calculadora infinita</title>
+</head>
+<body>
+    <script>
+let entrada = 1;
+let acumulador = 0;
+let operacao = '';
+while (operacao != 'sair') {
+    entrada = parseFloat(prompt('informe um número.'));
+    operacao = prompt('informe a operação ( + , - , * , / ou sair)');
+
+    if (operacao == '+') {acumulador += entrada;}
+    else if (operacao == '-') {acumulador -= entrada;}
+    else if (operacao == '*') {acumulador *= entrada;}
+    else if (operacao == '/') {acumulador /= entrada;}
+    alert('acumulador vale' + acumulador)
+}
+    </script>
+</body>
+</html>
