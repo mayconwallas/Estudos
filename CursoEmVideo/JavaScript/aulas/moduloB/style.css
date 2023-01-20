@@ -1,0 +1,35 @@
+body{
+    background: rgb(200, 200, 200);
+    font-family: 'Roboto Mono', monospace;
+}
+
+div#corpocompleto {
+    background: wheat;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 2px 2px 1px rgba(10, 10, 10, 0.6);
+    border-radius: 10px 20px
+}
+
+header#cabecalho{
+    margin: 10px;
+}
+
+div#conteudo{
+    margin: 10px;
+}
+
+footer#rodape{
+    margin: 10px;
+}
+
+em#var{
+    color: red;
+}
+
+strong#variavel{
+    color: rgb(50, 83, 192);
+}
+
+pre {
+    white-space: pre-wrap;
+  }

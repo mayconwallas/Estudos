@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Praticando JavaScrip</title>
+</head>
+<body>
+    <div id="corpocompleto">
+        <header id="cabecalho">
+            <h1>Aprendendo JavaScrip</h1>
+            <H2>Página de comandos.</H2>
+            <p>para voltar clica <a href="./pratica01.html">aqui</a></p>
+        </header>
+        <div id="conteudo">
+
+            <p><h3>Módulo B</h3>
+            
+            <h4>Aula 03, 04 e 05</h4>
+            <pre class="language-javascript">
+    window.alert("Olá, Mundo")  // vai exibir um alerta no navegador.
+    window.convirm("Esta gostando do conteudo?") // mesma coisa do alert mas com baotao de cancelar.
+    window.prompt("Escreva alguma coisa:") // caixa para receber informação
+    var num = 123 ou "exemplo" ou null ou true / false /*alguns tipos de variavel numero , string , null ou boleano*/
+        
+            </pre></p>
+            <p><h4>Aula 06</h4>
+            <pre class="language-javascript">
+    <em id="var">let</em> cria uma variavel.        
+        
+    <em id="var">var</em> <strong id="variavel">nome</strong> = window.prompt("Qual seu nome?") // juntando var ao prompt podemos receber a resposta direto para variavel.
+    <em id="var">let</em> <strong id="variavel">res</strong> = 1 // foi atribuido o numeor 1 na <em id="var">var</em> res.
+    <em id="var">let</em> <strong id="variavel">n1</strong> = Number.parseFloat(window.prompt("Digite um numero:")) // aqui o numero e atribuido a variavel n1 e tambem é convertida para Numero usando "Number".
+    <em id="var">let</em> <strong id="variavel">n2</strong> = Number.parseFloat(window.prompt("Digite outro numero:")) // mesma coisa do n1 porem criando n2 como variavel.
+    
+    informação extra:
+    document.write(`&lt;H1&gt; escreve algo na tela &lt;/H1&gt;`) vai escrever na tela o que eu coloquei entre crase e ainda vai reconhecer a tag h1 o mesmo ocorre se colocar a variavel entre ${} dentro das crases
+    exemplo: document.write(`aqui reconhece ${<em id="var">var</em>} mesmo sem concatenar com +`)
+    salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) // comando para configurar o valor de real
+            </pre></p>
+
+            <p><h4>Aula 07</h4>
+            <pre class="language-javascript">
+            </pre></p>
+        </div>
+        <footer id="rodape">
+            <p>Rodape </p>
+        </footer>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
