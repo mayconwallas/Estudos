@@ -14,6 +14,30 @@ header#cabecalho{
     margin: 10px;
 }
 
+nav#navegacao li {
+    list-style: none; 
+    margin: 10px;
+    display: inline;
+}
+
+nav#navegacao li a {
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid #f00; 
+    background: rgb(109, 60, 76);
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+nav#navegacao li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+}
+
 div#conteudo{
     margin: 10px;
 }
@@ -36,4 +60,15 @@ pre {
 
   img{
     width: 70%;
+  }
+
+  div#area {
+    background-color: aqua;
+    width: 40%;
+    margin-left: 25%;
+  }
+  div#res{
+    background-color: aqua;
+    width: 178px;
+    margin-top: 5px;
   }

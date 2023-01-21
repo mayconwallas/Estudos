@@ -30,3 +30,22 @@ let operador = prompt("Você quer somar '+' ou subtrair '-' ?")
     sair = prompt("para sair digite s ou para continhar digite c")
 }
  */
+var estilo = window.document.getElementById('area')
+estilo.addEventListener('mouseenter', entrar)
+estilo.addEventListener('mouseout', sair)
+function entrar() {
+    estilo.style.background = 'red'
+}
+function sair() {
+    estilo.style.background = 'aqua'
+}
+
+function somar() {
+    var tn1 = window.document.getElementById('txtn1')
+    var tn2 = window.document.querySelector('input#txtn2')
+    var res = window.document.getElementById('res')
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+    var soma = n1 + n2      
+    res.innerHTML = `Resultado: ${soma}`
+}

@@ -8,43 +8,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Praticando JavaScrip</title>
+    <title>Módulo C</title>
 </head>
 <body>
     <div id="corpocompleto">
         <header id="cabecalho">
-            <h1>Aprendendo JavaScrip</h1>
-            <H2>para não perder o costume "Olá, Mundo!"</H2>
-                <p><a href="./modulob.html">Módulo B</a></p>
-                <p><a href="./comandos.html">pagina de comandos</a></p>
+            <h1>Curso de JavaScrip</h1>
+            <nav id="navegacao">
+                <ul>
+                    <li><a href="./modulob.html">Módulo B</a></li>
+                    <li><a href="./comandos.html">pagina de comandos</a></li>
+                </ul> 
+            </nav>
+            <H2>Módulo C</H2>
         </header>
         <div id="conteudo">
             <P>Dando os primeiro passos em <strong><em>JS</em></strong>, para consultar mais informações usar o <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank"><strong><em>site</em></strong></a></P>
-            <p><h3>Módulo B</h3>
+            <p><h3>Módulo C</h3>
             
-            <h4>Aula 03, 04 e 05</h4>
+            <h4>Aula 09 </h4>
+            <p>
+                aula sobre DOM (document object model).<br>
+                Árvore DOM começa com <strong>window</strong> 
+            </p>
+            <img src="../../imagem/arvoredom.PNG" alt="mapa mental da arvore DOM JavaScrip">
             <pre class="language-javascript">
-    window.alert("Olá, Mundo")  /*vai exibir um alerta no navegador como caixa*/
-    window.convirm("Esta gostando do conteudo?") /*esse mostra a mensagem e da opção de confirmar ou cancelar.*/
-    window.prompt("Escreva alguma coisa:") /*Esse já começa a coletar dados interagindo com o usuario.*/
-    var num = 123 ou "exemplo" ou null ou true / false /*alguns tipos de variavel numero , string , null ou boleano*/
-        
+    window.docuemt.html.head.title()
             </pre></p>
-            <p><h4>Aula 06</h4>
-            <pre class="language-javascript">
-    <em id="var">let</em> cria uma variavel.        
-        
-    <em id="var">var</em> <strong id="variavel">nome</strong> = window.prompt("Qual seu nome?") // juntando var ao prompt podemos receber a resposta direto para variavel.
-    <em id="var">let</em> <strong id="variavel">res</strong> = 1 // foi atribuido o numeor 1 na <em id="var">var</em> res.
-    <em id="var">let</em> <strong id="variavel">n1</strong> = Number.parseFloat(window.prompt("Digite um numero:")) // aqui o numero e atribuido a variavel n1 e tambem é convertida para Numero usando "Number".
-    <em id="var">let</em> <strong id="variavel">n2</strong> = Number.parseFloat(window.prompt("Digite outro numero:")) // mesma coisa do n1 porem criando n2 como variavel.
-    
-    informação extra:
-    document.write(`&lt;H1&gt; escreve algo na tela &lt;/H1&gt;`) vai escrever na tela o que eu coloquei entre crase e ainda vai reconhecer a tag h1 o mesmo ocorre se colocar a variavel entre ${} dentro das crases
-    exemplo: document.write(`aqui reconhece ${<em id="var">var</em>} mesmo sem concatenar com +`)
-            </pre></p>
+            <h4>Aula 10 </h4>
+            <p>
+                aula 10 esta falando sobre <Strong>eventos DOM</Strong> 
+                os eventos que vamos falar sobre são
+            </p>
+            <pre>
+                mouseenter
+                mousemove
+                mousedown
+                mouseup
+                click
+                mouseout
+            </pre>
 
-
+            exemplo na aula:
+            <pre>
+                Foi criado uma div e atribui um id e um evendo
+                <div id="area">&lt;div id="area" onmouseenter="entrar()" onmouseout="sair()"&gt;
+o evento ativa passando o mause.
+passando o mouse aqui em cima fica vermelho e ao tirar o 
+mouse volta ao normal.    
+&lt;/div&gt;
+                </div>
+                mais tambem pode ser colocado como:
+                var estilo = window.document.getElementById('area')
+                estilo.addEventListener('mouseenter', entrar)
+                estilo.addEventListener('mouseout', sair)
+                function entrar() {
+                     estilo.style.background = 'red'
+                }
+                function sair() {
+                     estilo.style.background = 'aqua'
+                }
+            </pre>
+            <h3>exercicios:</h3>
+            <p>Somador simples</p>
+            <input type="number" name="txtn1" id="txtn1"> + 
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="Somar" onclick="somar()">
+            <div id="res">Resultado</div>
         </div>
         <footer id="rodape">
             <p>Rodape </p>
