@@ -33,3 +33,7 @@ strong#variavel{
 pre {
     white-space: pre-wrap;
   }
+
+  img{
+    width: 70%;
+  }
