@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Que Dia é hoje?</h1>
+    <input type="button" value="Aperta" onclick="dia()">
+    <div id="res">
+        <p>Resultado da operação vai aparecer aqui.</p>
+    </div>
+
+
+    <script>
+        /*function dia() {
+            var agora = new Date()
+            var dia = agora.toLocaleString('pt-BR', {weekday: 'long'});
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>hoje é ${dia}</p>`
+        }*/
+        
+        function dia() {
+            var agora = new Date()
+            var dia = agora.getDay()
+            var res = window.document.querySelector('div#res')
+            if (dia == 0) {
+            var diaAgora = 'Domingo.'
+            } else if (dia == 1 ){
+            var diaAgora = 'Segunda-feira.'
+            } else if (dia == 2 ){
+            var diaAgora = 'Terça-feira.'
+            } else if (dia == 3 ){
+            var diaAgora = 'Quarta-feira.'
+            } else if (dia == 4 ){
+            var diaAgora = 'Quinta-feira.'
+            } else if (dia == 5 ){
+            var diaAgora = 'Sexta-feira.'
+            } else {
+            var diaAgora = 'Sabado.'
+            } 
+            
+
+            switch (dia) {
+                case 0:
+                res.innerHTML = `<p>hoje é ${diaAgora}.</p>`
+                break;
+                case 1:
+                res.innerHTML = `<p>hoje é ${diaAgora}.</p>`
+                break;
+                case 2:
+                res.innerHTML = `<p>hoje é ${diaAgora}.</p>`
+                break;
+                case 3:
+                res.innerHTML = `<p>hoje é ${diaAgora}.</p>`
+                break;
+                case 4:
+                res.innerHTML = `<p>hoje é ${diaAgora}.</p>`
+                break;
+                case 5:
+                res.innerHTML = `<p>hoje é ${diaAgora}.</p>`
+                break;
+                case 6:
+                res.innerHTML = `<p>hoje é ${diaAgora}.</p>`
+                break;
+                default:
+                break;
+           }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+</head>
+<body>
+    <h1>Qual a sua idade?</h1>
+    <input type="number" name="txtAge" id="txtAge"> 
+    <input type="button" value="Enviar" onclick="idade()">
+    <div id="res">
+        <p>Resultado da operação vai aparecer aqui.</p>
+    </div>
+
+    <script>
+        function idade() {
+            var txtidade = window.document.querySelector('input#txtAge')
+            var res = window.document.querySelector('div#res')
+            var age = Number(txtidade.value)
+           if (age < 5 ) {
+             res.innerHTML = `Você tem ${age} anos e você deve ser mais o menos assim: <img src="../../../imagem/age4.PNG" alt="imagem bebê ate 4 anos">`
+           } else if(age >= 5 && age <= 12) {
+            res.innerHTML = `Você tem ${age} anos e você deve ser mais o menos assim: <img src="../../../imagem/age5a12.PNG" alt="menino de ate 12 anos">`
+           } else if(age > 12 && age <= 18) {
+            res.innerHTML = `Você tem ${age} anos e você deve ser mais o menos assim: <img src="../../../imagem/age12a18.PNG" alt="jovem de ate 18 anos">`
+           } else if(age > 18 && age <= 30) {
+            res.innerHTML = `Você tem ${age} anos e você deve ser mais o menos assim: <img src="../../../imagem/age18a30.PNG" alt="adulto de ate 30 anos">`
+           } else if(age > 30 && age <= 60) {
+            res.innerHTML = `Você tem ${age} anos e você deve ser mais o menos assim: <img src="../../../imagem/age30a60.PNG" alt="adulto de ate 60 anos">`
+           } else if(age > 60 && age <= 80) {
+            res.innerHTML = `Você tem ${age} anos e você deve ser mais o menos assim: <img src="../../../imagem/age60a80.PNG" alt="idoso de ate 80 anos">`
+           } else {
+            res.innerHTML = `Você tem ${age} anos e você deve ser mais o menos assim: <img src="../../../imagem/age80mais.PNG" alt="idoso mais de 80 anos">`
+           }
+        }
+    </script>
+</body>
+</html>
