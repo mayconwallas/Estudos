@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Hora do Dia</h1>        
+    </header>
+    <section id="corpo">
+        <div id="msg">
+            <p>
+                Em que ano você nasceu?<input type="number" name="txtAge" id="txtAge"> 
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem" >
+                <label for="fem">Feminino</label>
+            </p>
+            <input type="button" value="Enviar" onclick="carregar()">
+            
+        </div>
+        <div id="res">
+            <img id="imagem" src="" alt="">
+        </div>
+    </section>
+    <footer>&copy; CursoemVideo</footer>
+    <script src="02js.js"></script>
+</body>
+</html>
