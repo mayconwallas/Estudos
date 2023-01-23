@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>        
+    </header>
+    <section id="corpo">
+        <div id="msg">
+            <p>
+                Inicio: <input type="number" name="inicio" id="txti"> 
+            </p>
+            <p>
+                Fim: <input type="number" name="fim" id="txtf"> 
+            </p>
+            <p>
+                passo: <input type="number" name="passo" id="txtp"> 
+            </p>
+            <input type="button" value="Contar" onclick="contar()">
+            
+        </div>
+        <div id="res">
+            preparando a contagem
+        </div>
+    </section>
+    <footer>&copy; CursoemVideo</footer>
+    <script src="04contador.js"></script>
+</body>
+</html>
