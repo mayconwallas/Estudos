@@ -11,17 +11,17 @@ div#corpocompleto {
 }
 
 header#cabecalho{
-    margin: 10px;
+    margin: 5px;
 }
 
 nav#navegacao li {
     list-style: none; 
-    margin: 10px;
-    display: inline;
+    margin: 1px;
+    display:inline-block;
 }
 
 nav#navegacao li a {
-    padding: 5px 10px; 
+    padding: 2px 5px; 
     margin:0;
     border: 0px solid #f00; 
     background: rgb(109, 60, 76);
@@ -39,11 +39,11 @@ nav#navegacao li a:hover {
 }
 
 div#conteudo{
-    margin: 10px;
+    margin: 5px;
 }
 
 footer#rodape{
-    margin: 10px;
+    margin: 5px;
 }
 
 em#var{
@@ -72,3 +72,27 @@ pre {
     width: 178px;
     margin-top: 5px;
   }
+
+
+  footer{
+    text-align: center;
+  }
+
+  footer a {
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid #f00; 
+    background: rgb(109, 60, 76);
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+footer a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+}
