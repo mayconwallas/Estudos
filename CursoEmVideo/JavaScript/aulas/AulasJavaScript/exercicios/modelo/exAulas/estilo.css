@@ -21,6 +21,10 @@ p {
     text-align: left;
 }
 
+select#flista {
+    width: 150px;
+}
+
 footer{
     color: rgb(255, 255, 255);
     font-style: italic;
