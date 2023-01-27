@@ -4,9 +4,9 @@ function teste() {
     let resto = num % 2
 
     if (resto == 0) {
-        res.innerHTML = (`O número ${num} que foi digitado é <strong>PAR!</strong>`)
+        res.innerHTML = (`<p>O número ${num} que foi digitado é <strong>PAR!</strong></p>`)
     } else {
-        res.innerHTML = (`O número ${num} que foi digitado é <strong>ÍMPAR!</strong>`)
+        res.innerHTML = (`<p>O número ${num} que foi digitado é <strong>ÍMPAR!</strong></p>`)
     }
     
 }
