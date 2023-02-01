@@ -1,16 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
 body {
-  font-family: "Roboto Mono", monospace;
+  font: 12pt Arial;
   text-align: center;
-  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+  background-image: url("https://images5.alphacoders.com/587/587597.jpg");
   background-color: #000000;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
+h1, h2, h3 { 
+  font-family: 'Pacifico', cursive; 
+  font-weight: normal;
+  color: #ffffff;
+}
+
+button { 
+  font-size: 12pt; 
+  padding: 30px; }
 
 .container {
   text-align: center;
   padding: 20px;
+  background-color: #00000060;
 }
 
 .page-title {
@@ -40,4 +52,13 @@ body > img {
 
 img {
   max-height: 250px;
+}
+
+p {
+  color: #ffffff;
+}
+
+#final {
+  display: inline-flex;
+  flex-direction: column;
 }
