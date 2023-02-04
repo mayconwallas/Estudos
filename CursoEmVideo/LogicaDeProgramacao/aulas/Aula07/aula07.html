@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        Body {
+            background: rgba(64, 207, 218, 0.459);
+            text-align: center;
+            font: 15pt Arial;
+        }
+
+        button {
+            font-size: 12pt;
+            padding: 30px;
+            background: rgba(109, 141, 230, 0.37);
+            border-radius: 50px;
+            border: 0px;
+        }
+    </style>
+    <title>Aula 07</title>
+</head>
+<body>
+    <h1>Estruturas condicionais parte 1</h1>
+    <p>Estrutura if e else. </p>
+
+    <button onclick="idade()">Verificador de Idade</button>
+    <button onclick="dinheiro()">Verificador de viagem</button>
+    <button onclick="parImpa()">Verificador de Par ou Ímpar</button>
+
+    <script>
+        function idade() {
+            var ano = new Date()
+            var anoAtual = Number(ano.getFullYear())
+            var anoPessoa = Number(prompt("Em que ano você nasceu? "))
+            var res = anoAtual - anoPessoa
+            if (res <= 17) {
+                alert("Você tem "+res+" e ainda não chegou a maioridade.")
+            } else {
+                alert("Você tem "+res+" e já esta na maioridade!")
+            }
+        }
+
+        function dinheiro() {
+            var meuDinheiro = Number(prompt("Quanto vc tem para gastar na viagem? "))
+            if (meuDinheiro < 10000) {
+                alert("Não vai rolar disney não")
+            } else if(meuDinheiro == 10000 && meuDinheiro < 20000) {
+                alert("Boa viagem, mas curta com moderação")
+            } else {
+                alert("Boa viagem e gaste muito la!")
+            }
+        }
+
+        function parImpa() {
+            var numVerificar = Number(prompt("Qual numero vc quer verificar? "))
+            var verificado = numVerificar % 2
+            if (verificado == 0 ) {
+                alert("o numero "+numVerificar+" é Par!")
+            } else {
+                alert("o numero "+numVerificar+" é Ímpar!")
+            } 
+        }
+        
+    </script>
+</body>
+</html>

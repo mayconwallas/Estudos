@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+        body{
+            font: 12px Arial;
+            text-align: center;
+        }
+
+        button{
+            font-size: 12px;
+            padding: 30px;
+        }
+
+    </style>
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Aula de programaçõa 03</h1>
+    <P>continuando os estudos</P>
+
+    <button onclick="soma()">Somar</button>
+    <button onclick="subtrai()">subitrair</button>
+    <button onclick="multiplica()">Multiplicar</button>
+    <button onclick="dividi()">Dividir</button>
+    <script>
+        var nome = prompt("Digite seu nome?")
+        alert("Muito prazer " + nome + " vamos estudar muito JavaScript.")
+
+        function soma() {
+            var num1 = Number(prompt("Informe o Primeiro numero: "))
+            var num2 = Number(prompt("Informe o segundo numero:"))
+            var res = num1 + num2
+            alert(nome + " os numeros que vc escoheu foram: " + num1 + " e " + num2 + " logo a soma é: " + res)
+        }
+        function subtrai() {
+            var num1 = Number(prompt("Informe o Primeiro numero: "))
+            var num2 = Number(prompt("Informe o segundo numero:"))
+            var res = num1 - num2
+            alert(nome + " os numeros que vc escoheu foram: " + num1 + " e " + num2 + " logo subtração é : " + res)
+        }
+        function multiplica() {
+            var num1 = Number(prompt("Informe o Primeiro numero: "))
+            var num2 = Number(prompt("Informe o segundo numero:"))
+            var res = num1 * num2
+            alert(nome + " os numeros que vc escoheu foram: " + num1 + " e " + num2 + " logo a multiplicação é : " + res)
+        }
+        function dividi() {
+            var num1 = Number(prompt("Informe o Primeiro numero: "))
+            var num2 = Number(prompt("Informe o segundo numero:"))
+            var res = num1 / num2
+            alert(nome + " os numeros que vc escoheu foram: " + num1 + " e " + num2 + " logo a divisão é : " + res)
+        }
+    </script>
+</body>
+</html>

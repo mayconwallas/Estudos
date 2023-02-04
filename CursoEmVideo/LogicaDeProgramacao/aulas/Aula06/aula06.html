@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            font: 12px, Arial;
+            padding: 30px;
+
+        }
+    </style>
+    <title>Aula 06</title>
+</head>
+<body>
+    <h1>Aula 06</h1>
+    <p>Na aula 06 vamos fazer exercícios com os conhecimentos das aulas anteriores.</p>
+
+    <button onclick="ano()">Exercícios 01 Ano</button>
+    <button onclick="dolar()">Exercícios 02 dolar</button>
+    
+
+    <script>
+        function ano(){
+            var ano = new Date();
+            var anoHoje = Number(ano.getFullYear());
+            var anoPessoa = Number(prompt("Qual seu ano de nascimento: "))
+            var res = anoHoje - anoPessoa
+            alert("Sua idade é: " + res)
+        }
+        function dolar(){
+            var dolar = 5.14;
+            var realTem = Number(prompt("Quantos reais vc quer gastar comprando dolares? "));
+            var res = realTem / dolar
+            alert("Com " + realTem + " Reais voce vai conseguir comprar: " + res)
+        }
+
+    </script>
+</body>
+</html>
