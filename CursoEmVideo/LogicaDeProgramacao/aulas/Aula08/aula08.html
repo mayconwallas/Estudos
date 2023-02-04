@@ -25,10 +25,35 @@
     <h1>Estruturas condicionais parte 2</h1>
     <p>Estrutura if e else. </p>
 
-    
+    <button onclick="viagem()">viagem</button>
+    <button onclick="media()">media do aluno</button>
 
     <script>
-        
+        function viagem() {
+            var dinheiro = Number(prompt("quanto vc tem para viajar? "))
+            if (dinheiro >= 10000) {
+                alert("Partiu Disney")
+            } else if (dinheiro >=5000 && dinheiro < 10000) {
+                alert("Visitar família")
+            } else {
+                alert("Fica em casa mesmo!")
+            }
+        }
+
+        function media() {
+            var nota1 = Number(prompt("qual a primeira nova do aluno? "))
+            var nota2 = Number(prompt("qual a segunda nova do aluno? "))
+            var nota3 = Number(prompt("qual a terceira nova do aluno? "))
+            var nota4 = Number(prompt("qual a quarta nova do aluno? "))
+            var res = (nota1 + nota2 + nota3 + nota4) / 4
+            if (res < 5 ) {
+                alert("sua media foi "+ res + " você esta reprovado")
+            } else if (res >= 5 && res < 7) {
+                alert("sua media foi "+ res + " você esta de recuperação.")
+            } else {
+                alert("sua media foi "+ res + " você esta aprovado.")
+            }
+        }
     </script>
 </body>
 </html>
