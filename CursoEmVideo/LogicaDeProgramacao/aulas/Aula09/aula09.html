@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        Body {
+            background: rgba(64, 207, 218, 0.459);
+            text-align: center;
+            font: 15pt Arial;
+        }
+
+        button {
+            font-size: 12pt;
+            padding: 30px;
+            background: rgba(109, 141, 230, 0.37);
+            border-radius: 50px;
+            border: 0px;
+        }
+    </style>
+    <title>Aula 09</title>
+</head>
+<body>
+    <h1>Estruturas repetição parte 1</h1>
+    <p>while e eu fiz com for também nessa aula.</p>
+    <button onclick="contar()">contar</button>
+    <button onclick="contarfor()">contarfor</button>
+    <button onclick="contaroutro()">contareverso</button>
+    <button onclick="somador()">Somador</button>
+
+    <div class="res">
+        <p>Aqui vai aparecer a contagem...</p>
+    </div>
+
+   
+    <script>
+        var res = document.querySelector('.res')
+        function contar() {
+            var resposta = prompt("Vamos contar? [S] ou [N] ? ")
+            var resposta1 = Number(prompt("quer contar ate quanto? "))
+            var resposta1 = resposta1 + 1
+            var i = 0
+            if (resposta == 'S') {
+                res.innerHTML = (``);
+                while (i < resposta1 ) {
+                res.innerHTML += (`<p>${i}.</p>`);
+                i++;
+            }
+            } else {
+                res.innerHTML += (`<p>Ok, obrigado e tchau.</p>`);
+            }
+        }
+        function contarfor() {
+            var resposta = prompt("Vamos contar? [S] ou [N] ? ")
+            var resposta1 = Number(prompt("quer contar ate quanto? "))
+            var resposta1 = resposta1 + 1
+            if (resposta == 'S') {
+                res.innerHTML = (``);
+                for (let i = 0; i < resposta1; i++) {
+                    res.innerHTML += (`<p>${i}°.</p>`);
+                    
+                }
+            } else {
+                res.innerHTML += (`<p>Ok, obrigado e tchau.</p>`);
+            }
+        }
+
+        function contaroutro() {
+            var resposta = prompt("Vamos contar? [S] ou [N] ? ")
+            var resposta1 = Number(prompt("quer contar de quanto? "))
+            if (resposta == 'S') {
+                res.innerHTML = (``);
+                for (let i = resposta1; i > 0; i--) {
+                    
+                    res.innerHTML += (`<p>${i}°.</p>`);
+                    
+                }
+            } else {
+                res.innerHTML += (`<p>Ok, obrigado e tchau.</p>`);
+            }
+        }
+
+        function somador() {
+            var i = 0
+            var num1 = 0
+            var maior = 0
+            var menor = 100
+            var contar = Number(prompt("quantas numeros vc quer somar? "))
+            res.innerHTML = (``);
+            while (i < contar) {
+                var num = Number(prompt('qual numero vc quer somar? '))
+                num1 = num1 + num
+                if (num > maior) {
+                    maior = num
+                } 
+                if (num < menor) {
+                    menor = num
+                } 
+                i++;
+            }
+            res.innerHTML += (`<p>a soma foi: ${num1}.</p>`);
+            res.innerHTML += (`<p>e o maior numero foi: ${maior}.</p>`);
+            res.innerHTML += (`<p>e o menor numero foi: ${menor}.</p>`);
+        }
+    </script>
+</body>
+</html>
