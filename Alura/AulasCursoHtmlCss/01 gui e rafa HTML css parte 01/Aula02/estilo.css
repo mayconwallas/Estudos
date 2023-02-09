@@ -1,0 +1,23 @@
+.caixa{
+    position: relative;
+    width: 1920px;
+    height: 1151px;
+    color: aliceblue;
+    background: #000000;
+}
+
+.conteudo {
+    position: absolute;
+    width: 615px;
+    height: 482px;
+    left: 357px;
+    top: 278px;    
+}
+
+.imagem {
+    position: absolute;
+    width: 488px;
+    height: 550px;
+    left: 1030px;
+    top: 235px;
+}
