@@ -21,20 +21,42 @@
             </nav>
         </div>
     </header>
-    <main>
-        <form action="">
-            <label for="nomeEsobrenome"> Nome e sobrenome:</label>
-            <input type="text" id="nomeEsobrenome">
+        <main>
+            <form action="">
+                <label for="nomeEsobrenome"> Nome e sobrenome:</label>
+                <input type="text" id="nomeEsobrenome" class="inpute-padrao" required>
 
-            <label for="email">email</label>
-            <input type="text" id="email">
+                <label for="email">email</label>
+                <input type="email" id="email"class="inpute-padrao"required placeholder="seuemail@seuemail.com">
 
-            <label for="tel">telefone</label>
-            <input type="text" id="tel">
+                <label for="tel">telefone</label>
+                <input type="tel" id="tel"class="inpute-padrao"required placeholder="(xx) xxxxx-xxxx">
 
-            <input type="submit" value="Enviar">
-        </form>
-    </main>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="30" rows="10" class="inpute-padrao" required placeholder="Deixe sua mensagem aqui..."></textarea>
+                
+                <fieldset>
+                    <p>Como prefere o nosso contato?</p>
+                    <label for="radioEmail"><input id="radioEmail" type="radio" value="e-mail" name="contato">E-mail</label>
+                    
+                    <label for="radioTelefone"><input id="radioTelefone" type="radio" value="Telefone" name="contato">Telefone</label>
+                    
+                    <label for="radioWhatsapp"><input id="radioWhatsapp" type="radio" value="Whatsapp" name="contato" checked>Whatsapp</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <p>Qual horário prefere ser atendido?</p>
+                    <select id="">
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset>
+                <label for=""><input type="checkbox" class="checkbox" checked>Costaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
     <footer>
         <img src="imagens/imagens-produtos/logo-branco.png" alt="">
         <p class="copyright">&copy; Copyrigth Barbearia Alura - 2019</p>
