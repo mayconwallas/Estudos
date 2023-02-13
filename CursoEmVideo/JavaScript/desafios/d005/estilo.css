@@ -1,0 +1,29 @@
+body {
+    font: 12pt Arial;
+}
+
+button {
+    font-size: 12pt;
+    padding: 30px;
+}
+
+img {
+    width: 40px;
+}
+
+#esquerda {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+p {
+    font: 20pt Arial;
+    color: rgb(89, 98, 100);
+}
+
+div#outros p {
+    font: 20pt Arial;
+    color: rgb(89, 98, 100);  
+}
