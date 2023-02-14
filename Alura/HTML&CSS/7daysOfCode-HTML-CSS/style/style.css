@@ -1,0 +1,97 @@
+:root {
+    --cor-fundo:#ffffff;
+    --cor-letra-principal: #667085;
+    --cor-letra-secundaria: #101828;
+    --cor-letra-terciaria: #8E2424;
+    --cor-letra-branco: #ffffff;
+    --cor-nav-letraLogo: #3A404E;
+    --cor-nav-butao: #8E2424;
+
+    --font-principal: 'Inter';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-principal);
+    color: var(--cor-letra-principal);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*navegação*/
+.container__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.container__nav-logo {
+    padding: 0 0 0 20px ;
+}
+
+.container__nav-page{
+    margin-right: 5em ; 
+}
+
+.container__nav-page-lista {
+    display: flex;
+    align-items: center;   
+}
+
+.container__nav-page-lista-link {
+    margin-right: 2rem;
+}
+
+.container__nav-page-lista-link a{
+    text-decoration: none;
+    color: var(--cor-letra-principal);
+}
+
+.container__nav-button-entrar {
+    margin: 0.5em;
+    text-decoration: none;
+    color: var(--cor-letra-principal);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.container__nav-button-cadastrar {
+    margin: 0.5em;
+    color: var(--cor-letra-branco);
+    border: 1px solid var(--cor-nav-butao);
+    border-radius: 0.5rem;
+    background-color: var(--cor-nav-butao);
+    padding: 0.8rem 1rem;
+    margin-right: 2em;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/*cabeçalho - sobre*/
+
+.cabecalho {
+    margin: 10em;
+    font-family: var(--font-principal);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cabecalho__sobre {
+    color: var(--cor-letra-terciaria);
+}
+.cabecalho__titulo-principal {
+    color: var(--cor-letra-secundaria);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.6em 0;
+}
+
+.cabecalho__paragrafo {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
