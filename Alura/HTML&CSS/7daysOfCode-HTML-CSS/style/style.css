@@ -83,6 +83,7 @@ body {
 
 .cabecalho__sobre {
     color: var(--cor-letra-terciaria);
+    width: 100%;
 }
 .cabecalho__titulo-principal {
     color: var(--cor-letra-secundaria);
@@ -95,3 +96,73 @@ body {
     font-size: 1.4rem;
     line-height: 1.5rem;
 }
+
+/*Metricas*/
+
+.metricas-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    align-items:center;
+}
+.metricas-container__colunas {
+    margin: 0.3em;
+
+}
+
+.metricas-container__colunas h2 {
+    color: var(--cor-letra-terciaria);
+    font-size: 60px;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.metricas-container__colunas h3 {
+    color: var(--cor-letra-secundaria);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+/*section main*/
+
+.container__main {
+    text-align: center;
+    
+}
+
+.container__main h2 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container__main h3 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.container__main img {
+    width: 80%;   
+    padding: 3em 0;
+    
+}
+
+.container__vaga{
+    margin: 0 2em;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vaga-cargo {
+    text-align: right;
+}
+
+.container__vaga-especificacao {
+    justify-content: flex-start;
+    border: 1px solid var(--cor-letra-principal);
+    width: 40%;
+}
+
