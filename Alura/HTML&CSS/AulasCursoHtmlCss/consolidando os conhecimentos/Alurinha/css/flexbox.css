@@ -1,0 +1,73 @@
+.cabecalhoPrincipal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalhoPrincipal-nav {
+ display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+}
+
+/* Nossos Cursos */
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 20%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+
+/* Mapa de cursos */
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-flow: column wrap;
+    height: 15.6em;
+}
+
+/* rodapé */
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+    }
+    
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+       
+  
+}
