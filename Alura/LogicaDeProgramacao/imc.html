@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculo de IMC</title>
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculo de IMC</title>
+    </head>
+    <body>
 
-    <script>
-        function pulaLinha(){
-            document.write("<br>");
-        }
-
-        function mostra(informacao){
-            document.write(informacao);
-            pulaLinha();
-        }
         
-    </script>
-</body>
+        <script>
+            function pulaLinha(){
+                document.write("<br>");
+            }
+
+            function mostra(informacao){
+                document.write(informacao);
+                pulaLinha();
+            }
+            function calculaImc(peso, altura) {
+            return peso / (altura * altura);
+            }
+            var nome = prompt("Informe seu nome? ");
+            var peso = Number(prompt(nome + ", qual seu peso?"));
+            var altura = Number(prompt(nome + ", qual sua altura?"));
+            var imc = calculaImc(peso, altura);
+            mostra(nome + ", seu imc é: " + Math.round(imc));
+            if (imc < 18.5) {
+                mostra("Você esta muito magro.");
+            } else if (imc > 35) {
+                mostra("Você esta gordão.");
+            } else{
+                mostra("Você esta no pesso ideal.");
+            }
+        </script>
+        
+    </body>
 </html>
