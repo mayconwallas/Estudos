@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br>");
+        }
+
+        function mostra(informacao){
+            document.write(informacao);
+            pulaLinha();
+        }
+
+        var num1 = parseInt(prompt("você quer a tabuada de adição de qual numero? "));
+        var contador = 1;
+        while (contador <= 10) {
+            var soma = num1 + contador;
+            mostra(num1 + " + " + contador + " = " + soma );
+            contador++;
+        }
+        mostra("FIM! while ");
+        for (contador = 1 ; contador <= 10 ; contador++) {
+            var soma = num1 + contador
+            mostra(num1 + " + " + contador + " = " + soma );
+        }
+        mostra("FIM! For");
+
+    </script>
+</body>
+</html>

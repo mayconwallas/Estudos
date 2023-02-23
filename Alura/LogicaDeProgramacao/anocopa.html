@@ -16,7 +16,15 @@
             document.write(informacao);
             pulaLinha();
         }
-
+        
+        var anoCopa = 1930;
+        var anoAtual = parseInt(prompt("em que ano estamos?"));
+        while (anoCopa <= anoAtual) {
+            mostra("Teve compa em " + anoCopa);
+            anoCopa = anoCopa + 4;
+        }
+        mostra("FIM!");
+        
     </script>
 </body>
 </html>
