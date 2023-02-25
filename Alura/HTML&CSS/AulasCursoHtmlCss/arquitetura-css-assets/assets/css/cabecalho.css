@@ -1,0 +1,29 @@
+:root{
+    --cor-background-brnco: #f9f9f9;
+    --cor-background-cinza: #e5e5e5;
+    --cor-background-cinza-escuro: #bfbfbf;
+    --cor-font-branco: #f8f8f8;
+    --cor-font-cinza: #808080;
+    --cor-font-vermelho: #8D0606;
+    --font-principal: Pacifico, cursive;
+}
+
+.cabecalho {
+    align-items: center;
+    background: var(--cor-background-brnco);
+    display: flex;
+}
+
+@media screen and (min-width: 0) {
+    .cabecalho {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+}
