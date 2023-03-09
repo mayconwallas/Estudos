@@ -134,7 +134,5 @@ button[disabled=disabled], button:disabled {
 }
 
 .paciente-invalido {
-	background-color: #ff6961;
-	color:white;
-	font-weight: 700;
+	background-color: lightcoral;
 }
