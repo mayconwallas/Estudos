@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+.conteiner__cabecalho {
+    align-items: center;
+    background: #cecece;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.cabecalho__item {
+    font-weight: 500;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.cabecalho__item-link {
+    text-decoration: none;
+}
+
+
+/*estilo main imagens.html*/
+
+.imagens {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.imagens img {
+    width: 45%;
+    height: 400px;
+}
+
+@media screen and (min-width: 700px) {
+    .imagens {
+    flex-direction: row;  
+}
+}
