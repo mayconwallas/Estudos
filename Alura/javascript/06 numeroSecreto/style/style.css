@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Tilt+Prism&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 :root {
-    --font-principal:'Cedarville Cursive', cursive;
-    --font-secundaria: 'Tilt Prism', cursive;
-    --bg-color: #00ABB3;
-    --primeira-color: #EAEAEA;
-    --segunda-color: #3C4048;
-    --terceira-color: #B2B2B2;
+    --font-family: 'Montserrat', sans-serif;
+    --bg-color: #0AA1DD;
+    --primary-color: #E8F9FD;
 }
 
 body {
     background-color: var(--bg-color);
-    color: var(--primeira-color);
+    color: var(--primary-color);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,10 +16,10 @@ body {
     justify-content: center;
     text-align: center;
     margin: 0;
+    font-family: var(--font-family);
 }
 
-.titulo-principal {
-    font-family: var(--font-secundaria);
+h1 {
     font-size: 5em;
 }
 
@@ -31,30 +27,28 @@ h2 {
     font-size: 4em;
 }
 
-.texto-principal {
-    margin-top: 1em;
-    font-size: 2.5em;
-    font-family: var(--font-principal);
+h3 {
+    font-size: 2em;
+    margin-top: 20px;
 }
 
 .mensagem {
     font-size: 1.5em;
-    margin-top: 2.5em;
+    margin-top: 40px;
 }
 
 .box {
-    border:2px solid var(--terceira-color);
+    border: 2px solid var(--primary-color);
     display: inline-block;
     font-size: 4em;
-    margin: 20px;
     padding: 10px;
+    margin: 20px;
 }
 
-.btn-jogar {
+.btn-jogar{
     padding: 8px 15px;
     border: 0;
-    background: var(--primeira-color);
+    background: var(--primary-color);
     border-radius: 5px;
     margin-top: 20px;
-    font-family: var(--font-secundaria);
 }
