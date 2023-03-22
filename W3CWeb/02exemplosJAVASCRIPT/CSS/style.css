@@ -24,6 +24,8 @@
 
 
   .caixateste {
+    display: flex;
+    flex-direction: column;
     background-color: aliceblue;
     width: 50vw;
     height: 50vw;
