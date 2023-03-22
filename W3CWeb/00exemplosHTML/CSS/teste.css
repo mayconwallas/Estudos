@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    width: 100vw;
+    height: 100vw;
+    background-image: url("806997.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*background-position: right top;
+    background-attachment: fixed;
+  } */
+
+  body {
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(119, 203, 224, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .caixateste {
+    background-color: aliceblue;
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .titulo {
+      font-family: Georgia, serif;
+      font-size: 60px;
+      text-shadow: 2px 2px rgba(153, 205, 50, 0.623);
+    }
+    
+    .testeaqui {
+        text-align: justify;
+        padding: 25px;
+        text-transform: capitalize;
+        text-shadow: 2px 2px rgba(153, 205, 50, 0.623);
+        font-variant: small-caps;
+        font-family: Verdana, sans-serif;
+    }
