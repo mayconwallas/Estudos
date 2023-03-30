@@ -83,6 +83,20 @@
       "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 12
+    },
+    {
+      "titulo": "Guia de Carreira ANGULAR",
+      "descricao": "3 mil visualizações",
+      "url": "https://www.youtube.com/embed/mXtDHJRVoJo",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 12
+    },
+    {
+      "titulo": "Guia de Carreira PHP",
+      "descricao": "5,3 mil visualizações",
+      "url": "https://www.youtube.com/embed/ETohL_o3SEI",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 12
     }
   ]
 }
