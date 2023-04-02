@@ -97,6 +97,20 @@
       "url": "https://www.youtube.com/embed/ETohL_o3SEI",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 12
+    },
+    {
+      "titulo": "Conheça o canal da Alura",
+      "descricao": "30 mil visualizações",
+      "url": "https://www.youtube.com/embed/watch?v=94yuIVdoevc",
+      "imagem": "./img/Capturar.JPG",
+      "id": 13
+    },
+    {
+      "titulo": "asd",
+      "descricao": "6 mil visualizações",
+      "url": "a",
+      "imagem": "asd",
+      "id": 14
     }
   ]
 }

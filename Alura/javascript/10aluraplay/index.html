@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./css/flexbox.css">
     <title>AluraPlay</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-<!--  npx json-server --watch db.j  -->
-
 </head>
 
 <body>
@@ -24,8 +22,8 @@
 
             <div class="cabecalho__pesquisar">
 
-                <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
-                <button class="pesquisar__botao">
+                <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input" data-pesquisa>
+                <button class="pesquisar__botao" data-botao-pesquisa>
 
             </div>
 
@@ -37,9 +35,10 @@
     </header>
 
     <ul class="videos__container" alt="videos alura" data-lista>
-        
+
     </ul>
-    <script src="./js/mostrarVideos.js" type="module" ></script>
+    <script src="./js/mostrarVideos.js" type="module"></script>
+    <script src="./js/buscarVideos.js" type="module"></script>
 </body>
 
 </html>
