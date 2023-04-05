@@ -11,13 +11,23 @@ body {
 h1 {
     text-align: center;
 }
+.conteiner-cabecalho {
+    align-items: center;
+    background: #cecece;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+}
+
 .conteiner__cabecalho {
     align-items: center;
     background: #cecece;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    margin: 1rem;
-    padding: 1rem;
+
 }
 
 
