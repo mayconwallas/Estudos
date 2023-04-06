@@ -12,12 +12,12 @@ const listaLivros = [
     preco: 30
   },
   {
-  titulo: "PHP",
-  preco: 15
-  },
-  {
     titulo: "Elixir",
     preco: 50
+  },
+  {
+  titulo: "PHP",
+  preco: 15
   },
   {
     titulo: "Rust",
