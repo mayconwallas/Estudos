@@ -1,29 +1,29 @@
 const user = {
-    nome: "Maycon",
-    email: "M@W.com",
-    nascimento: "2020/12/20",
-    role: "Supremo user",
-    ativo: true,
-    exibirInfor: function() {
-        console.log(this.nome, this.email, this.role)
-    }
+  nome: "Juliana",
+  email: "j@j.com",
+  nascimento: "2021/01/01",
+  role: "estudante",
+  ativo: true,
+  exibirInfos: function() {
+    console.log(this.nome, this.email)
+  }
 }
-// const exibir = function() {
-//     console.log(this.nome, this.email, this.role)
-// }
-// const exibirNovo = exibir.bind(user);
-// exibirNovo();
 
 const admin = {
-    nome: "Wallas",
-    email: "M@W.com",
-    role: "Supremo admin",
-    criarCurso() {
-        console.log("curso criado!");
-    }
+  nome: "Mariana",
+  email: "m@m.com",
+  role: "admin",
+  criarCurso() {
+    console.log('curso criado!')
+  }
 }
 
-Object.setPrototypeOf(admin, user);
-admin.criarCurso();
-admin.exibirInfor();
-user.exibirInfor();
+Object.setPrototypeOf(admin, user)
+admin.criarCurso()
+admin.exibirInfos()
+
+
+
+
+
+
