@@ -1,0 +1,61 @@
+:root {
+    --font-principal: Arial, Helvetica, sans-serif;
+    --color-bg: #D4C9B5;
+    --color-botao: #88D8E1;
+}
+
+
+.pagina {
+    width: 95vw;
+    background-color: var(--color-bg);
+}
+
+.cabecalho {
+    text-align: center;
+    margin: 4px;
+    padding: 8px;
+    font-family: var(--font-principal);
+    font-size: 16px;
+}
+
+.container-principal {
+    width: 98%;
+}
+
+.main__title {
+    text-align: center;
+    padding-bottom: 8px;
+    font-family: var(--font-principal);
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botao {
+    background-color: var(--color-botao);
+    display: block;
+    width: 100px;
+    padding: 8px;
+    margin: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+.rodape {
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+    margin: 4px;
+    padding: 8px;
+    font-family: var(--font-principal);
+    font-size: 16px;
+}

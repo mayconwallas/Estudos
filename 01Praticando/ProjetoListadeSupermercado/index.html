@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="./assets/style/reset.css"> -->
+        <link rel="stylesheet" href="./assets/style/style.css">
+        <title>Lista de Compras</title>
+    </head>
+<body class="pagina">
+	<header class="cabecalho">
+		<h1>Lista de Compras</h1>
+        <hr>
+	</header>
+	<main class="container-principal">
+		<h1 class="main__title">Minha Lista de Supermercado</h1>
+        <form action="" >
+        <fieldset class="container-form">
+            <legend>Incluir itens</legend>
+            <p class="container-opcoes"> 
+                <strong>seção:</strong>
+                <select name="secaomercado" id="secaomercado">
+                <option value="Açougue">Açougue</option>
+                <option value="Adega">Adega e bebidas</option>
+                <option value="Cereais">Cereais</option>
+                <option value="Enlatados">Enlatados</option>
+                <option value="Frios">Frios e laticínios</option>
+                <option value="Higiene">Higiene e limpeza</option>
+                <option value="Hortifruti">Hortifruti e mercearia</option>
+                <option value="Padaria">Padaria</option>
+                </select>
+            </p> 
+            <label for="item-para-incluir" class="container-item-incluir">
+                <strong>item:</strong>
+                <input id="item-para-incluir" type="text" placeholder="qual item vai adicionar?">
+            </label>
+            <button class="botao">Incluir</button>
+        </fieldset>
+        </form>
+        <div class="lista">
+            
+        </div>
+	</main>
+	<footer class="rodape">
+        <hr>
+		by Maycon Wallas
+	</footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
