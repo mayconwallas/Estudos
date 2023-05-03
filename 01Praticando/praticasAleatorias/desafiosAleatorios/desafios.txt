@@ -1,0 +1,44 @@
+OK 01 Escreva uma função que recebe um array e retorna o primeiro elemento.
+Ok 02 Escreva uma função que recebe um array e retorna o último elemento.
+OK 03 Escreva uma função que recebe dois parâmetros, um array e um índice, e retorna o elemento do array correspondente ao índice.
+Ok 04 Escreva uma função que recebe um array e retorna o número de elementos no array.
+Ok 05 Escreva uma função que recebe um array de números e retorna a soma de todos os elementos.
+06 Escreva uma função que recebe um array de números e retorna o menor número do array.
+07 Escreva uma função que recebe um array de números e retorna o maior número do array.
+08 Escreva uma função que recebe um array de números e retorna um novo array contendo apenas os números pares.
+09 Escreva uma função que recebe um array de números e retorna um novo array contendo apenas os números ímpares.
+10 Escreva uma função que recebe um array de números e retorna a média dos números.
+11 Escreva uma função que recebe um array de números e retorna um novo array contendo os números em ordem crescente.
+12 Escreva uma função que recebe um array de números e retorna um novo array contendo os números em ordem decrescente.
+13 Escreva uma função que recebe um array de números e um número x e retorna um novo array contendo todos os números maiores que x.
+14 Escreva uma função que recebe um array de números e um número x e retorna um novo array contendo todos os números menores que x.
+15 Escreva uma função que recebe um array de números e um número x e retorna um novo array contendo todos os números iguais a x.
+16 Escreva uma função que recebe um array de strings e retorna um novo array contendo apenas as strings com mais de 5 caracteres.
+17 Escreva uma função que recebe um array de strings e retorna um novo array contendo apenas as strings com menos de 5 caracteres.
+18 Escreva uma função que recebe um array de strings e retorna um novo array contendo apenas as strings que começam com a letra "a".
+19 Escreva uma função que recebe um array de strings e retorna um novo array contendo apenas as strings que terminam com a letra "a".
+20 Escreva uma função que recebe um array de strings e um caractere x e retorna um novo array contendo apenas as strings que contêm o caractere x.
+21 Escreva uma função que recebe um array de objetos com propriedades "nome" e "idade" e retorna um novo array contendo apenas os objetos cuja idade é maior ou igual a 18.
+22 Escreva uma função que recebe um array de objetos com propriedades "nome" e "idade" e retorna um novo array contendo apenas os objetos cuja idade é menor que 18.
+23 Escreva uma função que recebe um array de objetos com propriedades "nome" e "idade" e retorna um novo array contendo apenas os objetos cujo nome começa com a letra "a".
+24 Escreva uma função que recebe um array de objetos com propriedades "nome" e "idade" e retorna um novo array contendo apenas os objetos cujo nome termina com a letra "a".
+25 Escreva uma função que recebe um array de objetos com propriedades "nome" e "idade" e retorna a soma das idades de todos os objetos.
+26 Escreva uma função que recebe um array de objetos com propriedades "nome" e "idade" e retorna a soma das idades de todos os objetos.
+27 Escreva uma função que recebe um array de objetos com propriedades "nome" e "idade" e retorna o objeto mais velho.
+28 Escreva uma função que recebe um array de objetos com propriedades "nome" e "idade" e retorna o objeto mais novo.
+29 Escreva uma função que recebe um array de números e um número x e retorna o índice do primeiro elemento do array que é igual a x. Se o número não estiver no array, a função deve retornar -1.
+30 Escreva uma função que recebe um array de números e retorna o segundo menor número do array.
+
+
+                Arrays para treinar;
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let evenNumbers = [2, 4, 6, 8, 10];
+let oddNumbers = [1, 3, 5, 7, 9];
+let words = ["apple", "banana", "orange", "pear", "grape"];
+let shortWords = ["cat", "dog", "bee"];
+let longWords = ["elephant", "hippopotamus", "giraffe"];
+let people = [{ name: "John", age: 20 }, { name: "Jane", age: 30 }, { name: "Bob", age: 25 }];
+let adultPeople = [{ name: "Jane", age: 30 }, { name: "Bob", age: 25 }];
+let animals = [{ name: "cat", type: "mammal" }, { name: "snake", type: "reptile" }, { name: "bird", type: "bird" }];
+let mixedArray = ["apple", 5, { name: "John", age: 20 }];
