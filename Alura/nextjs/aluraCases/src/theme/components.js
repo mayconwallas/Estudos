@@ -209,7 +209,7 @@ export function Input({ as, styleSheet, ...props }) {
     },
     ...styleSheet,
   };
-
+  
 
   return (
     <Text as={tag} styleSheet={finalStyleSheet} {...props} />
@@ -253,7 +253,7 @@ export function Button({ as, styleSheet, ...props }) {
     },
     ...restStyleSheet,
   };
-
+  
 
   return (
     <Text as={tag} styleSheet={finalStyleSheet} {...props} />
