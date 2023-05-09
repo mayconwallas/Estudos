@@ -35,8 +35,8 @@ function atualizarValorSelecionado() {
       console.log(listaH3[0]);
     }
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // previne o envio do formulário
+form.addEventListener('submit', (evento) => {
+  evento.preventDefault(); // previne o envio do formulário
   atualizarValorSelecionado();
 });
 
