@@ -19,11 +19,11 @@ function salvarItem() {
     // pegando valor digitado
     const comprasItem = itensInput.value
     // verificando duplicidade
-    const checarDuplicado = listaDeItens.some((elemento) =>  elemento.valor.toUpperCase() === comprasItem.toUpperCase())
+    const checarSecaoDuplicado = listaDeItens.some((elemento) =>  elemento.valor.toUpperCase() === comprasItem.toUpperCase())
     
     // o teste retorna true caso já tenha um item igual adicionado e falso no caso oposto.
     // se for true (verdadeiro) vai dar um alert se for false (falso) add o item
-    if(checarDuplicado) {
+    if(checarSecaoDuplicado) {
         //resposta foi true
         alert('item já consta na sua lista.');
     } else {
@@ -79,4 +79,17 @@ function mostrarItem() {
             mostrarItem()
         })
     })
+
+    const deletarObjetos = document.querySelectorAll('.deletar');
+    deletarObjetos.forEach(i => {
+        i.addEventListener('click', (evento) => {
+            const valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
+            listaDeItens.splice(valorDoElemento, 1);
+            mostrarItem()
+        })
+    })
+
+    
+    
+    console.log(deletarObjetos);
 }
