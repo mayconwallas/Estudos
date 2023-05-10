@@ -1,50 +1,56 @@
-let listaDeItens = []; // criando o array
+let listaDeItens = []
+let itemAEditar  
 
-// pegando os itens do html para manipular no javascritp
-const form = document.getElementById("form-itens");
-const itensInput = document.getElementById("receber-item");
-const ulItens = document.getElementById("lista-de-itens");
-const ulItensComprados = document.getElementById("itens-comprados");
+const form = document.getElementById("form-itens")
+const itensInput = document.getElementById("receber-item")
+const ulItens = document.getElementById("lista-de-itens")
+const ulItensComprados = document.getElementById("itens-comprados")
+const listaRecuperada = localStorage.getItem('listaDeItens')
 
-// add evendo de submit para atualizar dados do form
-form.addEventListener('submit', function (evento) {
-    evento.preventDefault();// prefinir que atualiza a pagina
-    salvarItem() // chamada da function abaixo
-    mostrarItem()//cria o li com os dados do array
+function atualizaLocalStorage() {
+    localStorage.setItem('listaDeItens', JSON.stringify(listaDeItens))
+}
+
+// (valores omitidos, 0, null, NaN, undefined, "", false) << retornam false
+
+if(listaRecuperada) {
+    listaDeItens = JSON.parse(listaRecuperada)
+    mostrarItem()
+} else {
+    listaDeItens = []
+}
+
+form.addEventListener("submit", function (evento) {
+    evento.preventDefault()
+    salvarItem()
+    mostrarItem()
     itensInput.focus()
 })
 
-// function que guarda o valor digitado dentro do array
 function salvarItem() {
-    // pegando valor digitado
     const comprasItem = itensInput.value
-    // verificando duplicidade
-    const checarSecaoDuplicado = listaDeItens.some((elemento) =>  elemento.valor.toUpperCase() === comprasItem.toUpperCase())
-    
-    // o teste retorna true caso já tenha um item igual adicionado e falso no caso oposto.
-    // se for true (verdadeiro) vai dar um alert se for false (falso) add o item
-    if(checarSecaoDuplicado) {
-        //resposta foi true
-        alert('item já consta na sua lista.');
+    const checarDuplicado = listaDeItens.some((elemento) => elemento.valor.toUpperCase() === comprasItem.toUpperCase())
+
+    if(checarDuplicado) {
+        alert("Item já existe")
     } else {
-    //resposta foi false
-    //guartando valor dentro do array
-    listaDeItens.push ({
+    listaDeItens.push({
         valor: comprasItem,
         checar: false
     })
-    }
-    // limpa o input apos add o item.
-    itensInput.value = '';
 }
 
-function mostrarItem() {
-    ulItens.innerHTML = '';
-    ulItensComprados.innerHTML = '';
+    itensInput.value = ''
+}
+
+function mostrarItem(){
+    ulItens.innerHTML = ''
+    ulItensComprados.innerHTML = ''
+    
     listaDeItens.forEach((elemento, index) => {
-        if (elemento.checar) {
-            ulItensComprados.innerHTML += `
-            <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
+        if(elemento.checar) {
+        ulItensComprados.innerHTML += `
+    <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
         <div>
             <input type="checkbox" checked class="is-clickable" />  
             <span class="itens-comprados is-size-5">${elemento.valor}</span>
@@ -53,43 +59,63 @@ function mostrarItem() {
             <i class="fa-solid fa-trash is-clickable deletar"></i>
         </div>
     </li>
-            `
-        } else {
-
-        ulItens.innerHTML += `
-            <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
-                <div>
-                    <input type="checkbox" class="is-clickable" />
-                    <input type="text" class="is-size-5" value="${elemento.valor}"></input>
-                </div>
-                <div>
-                    <i class="fa-solid fa-trash is-clickable deletar"></i>
-                </div>
-            </li>
         `
-        }
+        } else {
+        ulItens.innerHTML += `
+    <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
+        <div>
+            <input type="checkbox" class="is-clickable" />
+            <input type="text" class="is-size-5" value="${elemento.valor}" ${index !== Number(itemAEditar) ? 'disabled' : ''}> </input>
+        </div>
+        </div>
+        <div>
+            ${index === Number(itemAEditar) ? '<button onclick="salvarEdicao()"><i class="fa-regular fa-floppy-disk is-clickable"></i></button>' : '<i class="fa-regular is-clickable fa-pen-to-square editar"></i> '}
+            <i class="fa-solid fa-trash is-clickable deletar"></i>
+        </div>
+    </li>
+    `
+    }
     })
 
-    const inputCheck = document.querySelectorAll('input[type="checkbox"]')
+    const inputsCheck = document.querySelectorAll('input[type="checkbox"]')
 
-    inputCheck.forEach(i => {
+    inputsCheck.forEach(i => {
         i.addEventListener('click', (evento) => {
-            const valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
+            valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
             listaDeItens[valorDoElemento].checar = evento.target.checked
             mostrarItem()
         })
     })
 
-    const deletarObjetos = document.querySelectorAll('.deletar');
+    const deletarObjetos = document.querySelectorAll(".deletar")
+
     deletarObjetos.forEach(i => {
         i.addEventListener('click', (evento) => {
-            const valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
-            listaDeItens.splice(valorDoElemento, 1);
+            valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value')
+            listaDeItens.splice(valorDoElemento,1)
             mostrarItem()
         })
-    })
+    })    
 
-    
-    
-    console.log(deletarObjetos);
+    const editarItens = document.querySelectorAll('.editar')
+
+    editarItens.forEach(i => {
+        i.addEventListener('click', (evento) => {
+            itemAEditar = evento.target.parentElement.parentElement.getAttribute('data-value')
+            mostrarItem()
+        });
+
+});
+
+atualizaLocalStorage()
+
+}
+
+function salvarEdicao() {
+    const itemEditado = document.querySelector(`[data-value="${itemAEditar}"] input[type="text"]`)
+    // console.log(itemEditado.value)
+    listaDeItens[itemAEditar].valor = itemEditado.value;
+    console.log(listaDeItens)
+    itemAEditar = -1;
+    mostrarItem()
 }
