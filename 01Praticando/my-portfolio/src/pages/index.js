@@ -1,8 +1,8 @@
 import Hero from '@/components/Hero';
-/* import About from '@/components/About';
+import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
-import Contact from '@/components/Contact'; */
+import Contact from '@/components/Contact'; 
 
 import Head from 'next/head';
 
@@ -16,11 +16,11 @@ const Home = () => {
 				<link rel="icon" href="/favicon.jpeg" />
 			</Head>
 			<div>
-				{ <Hero />
-				/*<About />
+				<Hero />
+				<About />
 				<Skills />
 				<Projects />
-				<Contact /> */}
+				<Contact /> 
 			</div>
 		</>
 	);
