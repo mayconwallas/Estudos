@@ -15,14 +15,20 @@
 // let valorGstoViagem = quantosLitrovaiGastar * precoCombustivel;
 
 // console.log(valorGstoViagem.toFixed(2));
-
-
-
-
-function testando () {
-    const a = 1;
-    let b = 2;
+var testeVar;
+let testeLet;
+function testandoEscopo() {
+    testeVar= 10
+    let testeLet = 20;
+    // const testeConst = 30;
+    
+    
+    
+    function testando () {
+        console.log(testeVar);
+        console.log(testeLet);
+        // console.log(testeConst);
+    }
+    testando();
 }
-testando();
-console.log(a);
-console.log(b);
+testandoEscopo()

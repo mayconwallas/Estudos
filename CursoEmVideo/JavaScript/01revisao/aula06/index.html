@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula06</title>
+</head>
+<body>
+    <script>
+        // let nome = window.prompt("Qual seu nome?");
+        // window.alert(`é um prazer te conhecer ${nome}!`);
+
+        const n1 = parseFloat(window.prompt("Informe um numero!"));
+        const n2 = Number(window.prompt("Informe outro numero!"));
+        const soma = n1 + n2;
+        window.alert(`A soma de ${n1} e ${n2} é ${soma.toFixed(2).replace('.' , ',').toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}!`);
+    </script>
+</body>
+</html>

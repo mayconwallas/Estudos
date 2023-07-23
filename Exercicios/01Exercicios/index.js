@@ -3,19 +3,19 @@
 
 // exercicio numero 2
 
-function clicaAqui() {
-    alert("fui clicado")
-}
+// function clicaAqui() {
+//     alert("fui clicado")
+// }
 
 // exercicio numeo 3
-const num1 = prompt('informe um numero: ');
-const num2 = prompt('informe um numero: ');
-const num3 = prompt('informe um numero: ');
+// const num1 = prompt('informe um numero: ');
+// const num2 = prompt('informe um numero: ');
+// const num3 = prompt('informe um numero: ');
 
-function numMaiorEMenor() {
+// function numMaiorEMenor() {
     
     
-}
+// }
 
 
 
