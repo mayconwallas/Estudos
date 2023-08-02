@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <form action="contato">
+      <fieldset>
+        <legend>Entre em contato</legend>
+        <div>
+          <label for="contato">Assunto: </label>
+          <select name="select" id="assuntoContato">
+            <option value="suport">Suporte</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="elogio">Elogio</option>
+            <option value="reclamacao">Reclamação</option>
+          </select>
+        </div>
+        <div>
+          <label for="contato"><strong>Nome Completo:</strong></label>
+          <input type="text" form="contato" name="nome" id="nome" />
+        </div>
+        <div>
+          <label for="contato"><strong>E-mail:</strong></label>
+          <input type="email" form="contato" name="email" id="email" />
+        </div>
+        <div>
+          <label for="contato"><strong>Mensagem:</strong></label>
+          <area shape="" coords="" href="" alt="">
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

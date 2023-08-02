@@ -1,0 +1,18 @@
+body {
+    color: rgb(99, 46, 46);
+    background: rgb(228, 200, 158) ;
+}
+
+div {
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body dl {
+    text-align: start;
+}
