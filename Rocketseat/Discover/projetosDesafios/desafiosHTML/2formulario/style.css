@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 18px;
+}
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inputUp {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputUp input {
+    width: 150px;
+}
+
+.inputUp textarea {
+    width: 300px;
+}

@@ -7,29 +7,37 @@
     <title>Contato</title>
   </head>
   <body>
+          <h1>Formulario HTML</h1>
+          <a href="../desafiosHTML.html">Voltar</a>
     <form action="contato">
       <fieldset>
         <legend>Entre em contato</legend>
         <div>
-          <label for="contato">Assunto: </label>
+          <label for="assuntoContato"><strong>Assunto: </strong></label>
           <select name="select" id="assuntoContato">
             <option value="suport">Suporte</option>
             <option value="sugestao">Sugestão</option>
-            <option value="elogio">Elogio</option>
+            <option value="elogio" selected>Elogio</option>
             <option value="reclamacao">Reclamação</option>
           </select>
         </div>
-        <div>
-          <label for="contato"><strong>Nome Completo:</strong></label>
-          <input type="text" form="contato" name="nome" id="nome" />
+        <div class="inputUp">
+          <label for="nome"><strong>Nome Completo:</strong></label>
+          <input type="text" form="contato" name="nome" id="nome" placeholder="Seu nome"/>
+        </div>
+        <div class="inputUp">
+          <label for="email"><strong>E-mail:</strong></label>
+          <input type="email" form="contato" name="email" id="email" placeholder="email@seudominio.com"/>
+        </div>
+        <div class="inputUp">
+          <label for="mensagem"><strong>Mensagem:</strong></label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
         </div>
         <div>
-          <label for="contato"><strong>E-mail:</strong></label>
-          <input type="email" form="contato" name="email" id="email" />
+        <input type="checkbox" name="checkbox" id="checkbox"><label for="checkbox">Aceito receber novidades por e-mail</label>
         </div>
         <div>
-          <label for="contato"><strong>Mensagem:</strong></label>
-          <area shape="" coords="" href="" alt="">
+        <button type="submit" name="mybutton" formmethod="get">Enviar</button>
         </div>
       </fieldset>
     </form>
