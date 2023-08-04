@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: blanchedalmond;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+.tituloImag {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.tituloImag q {
+  margin-left: 15px;
+}
+
+main div,
+aside {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main div img {
+  width: 400px;
+}
+
+.anonymous {
+  width: 200px;
+}
