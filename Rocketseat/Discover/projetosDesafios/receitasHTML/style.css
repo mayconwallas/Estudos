@@ -8,6 +8,7 @@ body {
     background: rgb(247, 176, 94);
     width: 100vw;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 div {
@@ -21,17 +22,42 @@ div {
     border-radius: 25px;
 }
 
-div h1, h2 {
+main h1, h2 {
     text-align: center;
+    margin: 16px;
+}
+h1 {
+    font-size: 28px;
 }
 
-div img {
+h2 {
+    font-size: 20;
+}
+
+p {
+    font-size: 16px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
     width: 85%;
     margin: auto;
     border-radius: 20px;
 }
 
-div ul, ol {
+figure figcaption {
+    text-align: end;
+    width: 85%;
+    margin: 6px auto;
+    color: #8F8F8F;
+    font-size: 12px;
+}
+
+main ul, ol {
     width: 85%;
     margin: auto;
     border-radius: 20px;
@@ -40,6 +66,26 @@ div ul, ol {
     gap: 8px;
 }
 
-div ul li, ol li {
+main ul li, ol li {
     list-style: none;
+}
+
+section {
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+section h2 {
+    margin: 16px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: #8F8F8F;
+}
+
+footer p, a{
+    font-size: 12px;
 }
