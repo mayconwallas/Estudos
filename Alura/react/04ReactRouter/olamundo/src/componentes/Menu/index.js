@@ -1,5 +1,7 @@
-import styles from './Menu.module.css'
-import MenuLink from '../MenuLink'
+import { Link, useLocation } from 'react-router-dom';
+import MenuLink from '../MenuLink';
+import styles from './Menu.module.css';
+
 export default function Menu() {
     return (
         <header>
@@ -8,10 +10,9 @@ export default function Menu() {
                     Início
                 </MenuLink>
                 <MenuLink to="/sobremim">
-                    Sobre min
+                    Sobre Mim
                 </MenuLink>
             </nav>
         </header>
     )
-
 }
