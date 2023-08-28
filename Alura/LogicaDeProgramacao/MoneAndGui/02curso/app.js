@@ -1,3 +1,5 @@
+let listaDeNumerosSorteados = [];
+let numeroMax = 100;
 let numeroSecreto = gerarNumeroAleatorio()
 const reiniciar = document.getElementById("reiniciar")
 const textoH1 = "Jogo do número secreto"
@@ -8,7 +10,8 @@ exibeInicial();
 
 function exibirTextoTela(tag, texto) {
   let campo = document.querySelector(tag)
-  campo.innerHTML = texto
+  campo.innerHTML = texto;
+  responsiveVoice.speak(texto, 'Brazilian Portuguese Female', { rate: 1.2 })
 }
 
 function exibeInicial() {
@@ -41,7 +44,18 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-  return parseInt(Math.random() * 100 + 1)
+  let numeroEscolhido = parseInt(Math.random() * numeroMax + 1)
+  let quantidadeDeElementoNaLista = listaDeNumerosSorteados.length;
+
+  if (quantidadeDeElementoNaLista == numeroMax) {
+    listaDeNumerosSorteados = [];
+  }
+  if(listaDeNumerosSorteados.includes(numeroEscolhido)) {
+    return gerarNumeroAleatorio();
+  } else {
+    listaDeNumerosSorteados.push(numeroEscolhido);
+    return numeroEscolhido;
+  }
 }
 
 function limpaCampo() {
