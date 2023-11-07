@@ -1,0 +1,41 @@
+<script>
+// string
+const nome = "Maycon";
+const ultimoNome = "Silva";
+console.log(`${nome} ${ultimoNome}`);
+
+//number (inteiro)
+const idade = 34;
+const diaNascimento = 18;
+const mesNascimento = 9;
+const anoNascimento = 1989;
+
+function formadaData(dia, mes, ano) {
+    let data;
+    if(mes <= 9){
+        mes = "0" + mes
+    }
+    data = `${dia}/${mes}/${ano}`
+    return data;
+}
+
+const data = formadaData(diaNascimento, mesNascimento, anoNascimento );
+
+console.log(`idade: ${idade}`);
+console.log(`Data de Nascimento: ${data}`);
+
+
+//float (numero com ponto flutuante)
+const pi = 3.14;
+const qualQuerNumero = 321.466;
+
+console.log(`Pi é ${pi}`);
+console.log(`Qual quer numero ${qualQuerNumero}`)
+
+//boolean
+const verdade = true;
+const falso = false;
+
+console.log(verdade == true);
+console.log(falso == true);
+</script>

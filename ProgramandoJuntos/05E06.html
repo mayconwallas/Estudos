@@ -1,0 +1,11 @@
+<script>
+const nome = prompt("Olá, qual seu nome?");
+const idadeInformada = Number(prompt( `${nome} qual sua idade?`));
+if(idadeInformada <= 0 || idadeInformada > 120) {
+    console.log("dados inválidos inicie novamente a operação");
+} else if (idadeInformada >= 18) {
+    console.log(`${nome} você tem ${idadeInformada} anos logo vc já atingiu a maioridade, pode entrar.`);
+} else {
+    console.log(`${nome} você tem ${idadeInformada} anos infelizmente você não atingiu a maioridade, não pode entrar no cabaré.`);
+}
+</script>
