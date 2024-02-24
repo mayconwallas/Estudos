@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 720px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card__left, .card__right {
+    border: 1px solid blue;
+}
+
+.card__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card__right img {
+    height: 160px;
+}
